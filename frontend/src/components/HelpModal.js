@@ -44,7 +44,12 @@ const HelpModal = () => {
     <>
       {/* Fixed Help Button */}
       <button
-        onClick={() => setIsOpen(true)}
+        type="button"
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          setIsOpen(true);
+        }}
         className="help-button-fixed flex items-center gap-2 px-5 py-4 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition-colors btn-press"
         aria-label="Get Help"
         data-testid="help-button"
