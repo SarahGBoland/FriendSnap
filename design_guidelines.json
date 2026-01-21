@@ -1,0 +1,188 @@
+{
+  "identity": {
+    "name": "Friendsnap",
+    "persona": "E1: The Anti-AI Designer",
+    "tone": "Friendly, Safe, Clear, Encouraging, Non-judgmental",
+    "aesthetic": "Tactile, High-Contrast, Playful but Mature",
+    "target_audience": "Adults with intellectual disabilities"
+  },
+  "typography": {
+    "headings": {
+      "family": "Nunito, sans-serif",
+      "weights": ["700", "800"],
+      "usage": "All section titles, hero text, and major calls to action. Use tight tracking for large sizes.",
+      "sizes": {
+        "h1": "text-4xl md:text-6xl",
+        "h2": "text-3xl md:text-5xl",
+        "h3": "text-2xl md:text-3xl"
+      }
+    },
+    "body": {
+      "family": "Mulish, sans-serif",
+      "weights": ["500", "700"],
+      "usage": "All readable content. Minimum weight 500 for better legibility.",
+      "sizes": {
+        "base": "text-lg md:text-xl",
+        "small": "text-base (avoid anything smaller)"
+      }
+    },
+    "accessibility_rules": [
+      "Line height must be at least 1.5 (leading-relaxed)",
+      "Paragraph spacing must be at least 1.5x font size",
+      "No italics (harder to read)",
+      "Avoid all-caps for long text"
+    ]
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Friendly Orange",
+        "value": "#F97316",
+        "tailwind": "bg-orange-500",
+        "text_contrast": "#FFFFFF"
+      },
+      "secondary": {
+        "name": "Trust Blue",
+        "value": "#3B82F6",
+        "tailwind": "bg-blue-500",
+        "text_contrast": "#FFFFFF"
+      },
+      "accent": {
+        "name": "Joy Pink",
+        "value": "#EC4899",
+        "tailwind": "bg-pink-500",
+        "text_contrast": "#FFFFFF"
+      },
+      "background": {
+        "main": "#F8FAFC",
+        "tailwind": "bg-slate-50",
+        "card": "#FFFFFF"
+      },
+      "text": {
+        "primary": "#0F172A",
+        "tailwind": "text-slate-900",
+        "secondary": "#334155",
+        "tailwind": "text-slate-700"
+      },
+      "border": {
+        "default": "#E2E8F0",
+        "tailwind": "border-slate-200",
+        "active": "#F97316"
+      }
+    },
+    "rules": [
+      "Always use high contrast (AAA standard preferred)",
+      "Never use pure black (#000000), use Slate-900",
+      "Color must not be the only way to convey information (use icons + text)"
+    ]
+  },
+  "components": {
+    "buttons": {
+      "style": "Pill-shaped, massive padding, tactile feel",
+      "classes": "rounded-full px-8 py-4 text-xl font-bold shadow-lg hover:shadow-xl transition-all active:scale-95 border-2 border-transparent hover:border-white/20",
+      "variants": {
+        "primary": "bg-orange-500 text-white hover:bg-orange-600",
+        "secondary": "bg-blue-500 text-white hover:bg-blue-600",
+        "outline": "bg-white text-slate-900 border-slate-200 hover:bg-slate-50"
+      }
+    },
+    "cards": {
+      "style": "Friendly containers, distinct edges",
+      "classes": "bg-white rounded-3xl border-2 border-slate-100 shadow-sm hover:shadow-md transition-all p-6 md:p-8"
+    },
+    "inputs": {
+      "style": "Large touch targets, clear focus",
+      "classes": "h-14 rounded-2xl border-2 border-slate-200 bg-slate-50 px-4 text-lg focus:border-orange-500 focus:ring-4 focus:ring-orange-100 transition-all"
+    },
+    "navigation": {
+      "style": "Bottom bar for mobile, clear labels",
+      "classes": "fixed bottom-0 w-full bg-white border-t-2 border-slate-100 p-4 flex justify-around items-center z-50"
+    }
+  },
+  "layout": {
+    "grid_system": "The Tetris Grid (Mode A)",
+    "container": "max-w-5xl mx-auto px-4 md:px-8",
+    "spacing": {
+      "section_gap": "gap-8 md:gap-12",
+      "internal_padding": "p-6 md:p-8"
+    },
+    "rules": [
+      "Avoid clutter. One primary action per screen.",
+      "Use whitespace generously to separate concepts.",
+      "Grid items must be direct children."
+    ]
+  },
+  "accessibility": {
+    "features": [
+      "Text-to-Speech (TTS) button on all major text blocks",
+      "Help button visible on EVERY screen (fixed position)",
+      "Simple language (Grade 4 reading level)",
+      "Step-by-step wizards for complex tasks (Sign up, Upload)"
+    ],
+    "touch_targets": "Minimum 60x60px for all interactive elements"
+  },
+  "visual_enhancers": {
+    "icons": "Use Lucide-React with thick strokes (stroke-width={2.5} or {3})",
+    "illustrations": "Use 'Sticker' style flat illustrations for empty states",
+    "feedback": "Use clear success/error states with icons and text"
+  },
+  "image_urls": {
+    "avatars": [
+      {
+        "url": "https://images.pexels.com/photos/19919392/pexels-photo-19919392.jpeg",
+        "category": "avatar",
+        "description": "Friendly illustrated avatar example"
+      },
+      {
+        "url": "https://images.pexels.com/photos/16896038/pexels-photo-16896038.jpeg",
+        "category": "avatar",
+        "description": "Alternative avatar style"
+      }
+    ],
+    "hobbies": [
+      {
+        "url": "https://images.pexels.com/photos/3801997/pexels-photo-3801997.jpeg",
+        "category": "hobby",
+        "description": "Cooking/Food hobby representation"
+      },
+      {
+        "url": "https://images.pexels.com/photos/29205074/pexels-photo-29205074.jpeg",
+        "category": "hobby",
+        "description": "Music/Guitar hobby representation"
+      }
+    ],
+    "logo": "https://customer-assets.emergentagent.com/job_share-memories-1/artifacts/0pgxf50e_ChatGPT%20Image%20Jan%2014%2C%202026%2C%2008_18_46%20PM.png"
+  },
+  "instructions_to_main_agent": [
+    "IMPLEMENTATION PRIORITY: Accessibility > Aesthetics.",
+    "Use the 'Nunito' font for all headings. Import it from Google Fonts.",
+    "Use 'Mulish' for body text.",
+    "Ensure the 'Help' button is always visible (z-50 fixed bottom-right or top-right).",
+    "For the 'Sign Up', break it into steps: 1. Choose Nickname, 2. Choose Avatar. Do not put everything on one page.",
+    "For 'Photo Upload', use a large drag-and-drop zone with a massive camera icon.",
+    "Use the provided image URLs for the initial seed data/mockups.",
+    "Do not use complex gradients for text backgrounds. Keep text on solid colors.",
+    "Add 'aria-label' to every button.",
+    "Use 'sonner' for all notifications (success/error)."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) ONLY for overlays, not for main content reading.",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx"
+  ]
+}
