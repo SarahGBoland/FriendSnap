@@ -216,7 +216,7 @@ input[type="radio"] {
 
 @media (min-width: 768px) {
   .help-button-fixed {
-    bottom: 2rem;
+    bottom: 120px;
     right: 2rem;
   }
 }
